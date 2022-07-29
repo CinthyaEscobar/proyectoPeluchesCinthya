@@ -1,0 +1,17 @@
+@import './base/mixins.scss';
+.titulo {
+    @include titulo (center,underline,rgb(228, 33, 163),40px,'Potta One');
+    
+}
+
+.subtitulo{
+    @include subtitulo(center,rgb(241, 38, 106));
+}
+
+.parrafo{
+    @include parrafo (justify, rgb(241, 94, 143),25px);
+}
+
+.contacto{
+    @include contacto (left, rgb(241, 94, 143),20px);
+}

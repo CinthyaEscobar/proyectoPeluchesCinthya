@@ -3,36 +3,6 @@
     padding: 0;
 }
 
-.main{
-    font-size: 20px;
-    padding: 30px;
-}
-
-h1 {
-    text-align: center;
-    text-decoration: underline;
-    color: rgb(131, 10, 50);
-    text-decoration-color: rgb(153, 50, 67);
-    font-size: 40px;
-    font-family: 'Potta One', cursive;
-}
-
-h2 {
-    text-align: center;
-    color: rgb(131, 10, 50);
-}
-
-h3 {
-    text-align: center;
-    background: #fcdbe6;
-    color: #f15c8e;
-    font-weight: bold;
-    padding: 15px;
-    border: 2px solid #f5b6cb;
-    border-radius: 6px;
-    font-size: 30px;
-
-}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -44,6 +14,15 @@ header {
     background: map-get($colores, "color-secundario");
 }
 
+article p {
+    padding: 60px;
+}
+
+.video__container {
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
 
 
 footer {
@@ -58,10 +37,10 @@ footer {
 
     a {
         color: #f15c8e;
-        text-decoration: line-through;
+        text-decoration: none;
 
         &:hover {
-            color: green;
+            color: rgb(128, 0, 60);
         }
     }
 }
@@ -78,9 +57,71 @@ footer {
         color: #811212;
         text-decoration: none;
         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-
+       
         &:hover {
             background-color: rgb(172, 72, 105);
         }
+       
     }
 }
+
+
+/*GALERIA*/
+.galeria__container--img {
+    width: 80%;
+    height: auto;
+    margin: 10px 20px;
+    justify-content: space-around;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        filter: opacity(0.9);
+        transform: scale(1.04);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* para celular */
+    .main,
+    .main p,
+    .right,
+    .footer,
+    .nav,
+    .video__container,
+    .imagenes__index__container,
+    .article__container,
+
+    .nav__container {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .article__container--2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .main p {
+        display: grid;
+        align-content: center;
+
+    }
+}
+
+@media only screen and (max-width:480px) {
+    iframe {
+        width: 100%;
+    }
+}
+

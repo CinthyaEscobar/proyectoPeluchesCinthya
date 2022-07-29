@@ -13,6 +13,7 @@
     
     &__card-body{
         padding: 15px;
+        font-size: map-get($fuentes , "normal" );
         text-align: center;
     }
    

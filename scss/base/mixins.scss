@@ -1,0 +1,46 @@
+%boton {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+
+/* Mixins */
+@mixin boton ($bgColor, $textColor) {
+    
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+@mixin flex($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align; 
+    flex-wrap: $wrap;
+}
+
+@mixin titulo($align, $decoration, $color, $size, $family){
+    text-align: $align;
+    text-decoration:$decoration;
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+}
+
+@mixin subtitulo($align, $color){
+    text-align: $align;
+    color: $color;
+}
+
+@mixin parrafo($align, $color, $size){
+    text-align: $align;
+    color: $color;
+    font-size: $size;
+}
+
+@mixin contacto($align, $color, $size){
+    text-align: $align;
+    color: $color;
+    font-size: $size;}

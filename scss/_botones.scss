@@ -1,0 +1,14 @@
+@import './base/mixins.scss';
+
+.botonEnviar {
+    @include boton(rgb(131, 10, 50), pink);
+}
+
+.botonLimpiar {
+    @include boton( #f15c8e, pink);
+}
+
+.botonVer{
+    @include boton(#f15c8e, pink);
+}
+
