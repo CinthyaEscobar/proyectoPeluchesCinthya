@@ -6,9 +6,10 @@
 
 .botonLimpiar {
     @include boton( #f15c8e, pink);
+    margin: 10px;
 }
 
 .botonVer{
     @include boton(#f15c8e, pink);
+    
 }
-

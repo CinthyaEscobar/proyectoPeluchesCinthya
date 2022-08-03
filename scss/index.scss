@@ -1,5 +1,6 @@
 
 .card {
+   
     border-radius: 10px;
     overflow: hidden;
     background: #fff;
@@ -12,7 +13,7 @@
     }
     
     &__card-body{
-        padding: 15px;
+        padding: 20px;
         font-size: map-get($fuentes , "normal" );
         text-align: center;
     }

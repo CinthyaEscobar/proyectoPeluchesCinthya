@@ -95,7 +95,7 @@ footer a {
     box-shadow: 5px 5px 20px rgba(132, 55, 134, 0.733);
     transform: translateY(-3%); }
   .card__card-body {
-    padding: 15px;
+    padding: 20px;
     font-size: 18px;
     text-align: center; }
 
@@ -128,7 +128,8 @@ footer a {
 
 .botonLimpiar {
   background-color: #f15c8e;
-  color: pink; }
+  color: pink;
+  margin: 10px; }
 
 .botonVer {
   background-color: #f15c8e;
