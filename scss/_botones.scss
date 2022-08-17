@@ -11,5 +11,11 @@
 
 .botonVer{
     @include boton(#f15c8e, pink);
+    font-size: 1.4rem;
     
+}
+
+.botonIndex{
+    @include botonIndex(#f15c8e, pink);
+    font-size: 1.4rem;
 }

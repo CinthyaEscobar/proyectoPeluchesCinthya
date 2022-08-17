@@ -3,10 +3,16 @@
     padding: 0;
 }
 
+a{
+    color:rgb(95, 16, 141) !important;
+}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: map-get($colores, "color-principal");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -26,8 +32,9 @@ article p {
 
 
 footer {
+   margin-top: auto;
     li {
-
+        
         font-size: 1.4rem;
         display: block;
         padding: .5rem 1rem;

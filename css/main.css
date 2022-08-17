@@ -2,9 +2,15 @@
   margin: 0;
   padding: 0; }
 
+a {
+  color: #5f108d !important; }
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background: linear-gradient(to right, rgba(94, 231, 223, 0.5), rgba(180, 144, 202, 0.5)); }
+  background: linear-gradient(to right, rgba(94, 231, 223, 0.5), rgba(180, 144, 202, 0.5));
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 header {
   background: linear-gradient(to right, rgba(196, 113, 245, 0.5), rgba(250, 113, 205, 0.5)); }
@@ -17,18 +23,19 @@ article p {
   margin-top: 7px;
   text-align: center; }
 
-footer li {
-  font-size: 1.4rem;
-  display: block;
-  padding: .5rem 1rem;
-  text-decoration: none;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; }
-
-footer a {
-  color: #f15c8e;
-  text-decoration: none; }
-  footer a:hover {
-    color: #80003c; }
+footer {
+  margin-top: auto; }
+  footer li {
+    font-size: 1.4rem;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; }
+  footer a {
+    color: #f15c8e;
+    text-decoration: none; }
+    footer a:hover {
+      color: #80003c; }
 
 .navbar__collapse {
   flex-grow: initial; }
@@ -84,20 +91,49 @@ footer a {
   iframe {
     width: 100%; } }
 
-.card {
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default; }
-  .card:hover {
-    box-shadow: 5px 5px 20px rgba(132, 55, 134, 0.733);
-    transform: translateY(-3%); }
-  .card__card-body {
-    padding: 20px;
-    font-size: 18px;
-    text-align: center; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem; }
+  .grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s; }
+    .grid-item:hover {
+      box-shadow: 5px 5px 20px rgba(132, 55, 134, 0.733);
+      transform: translateY(-3%); }
+
+.card-img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  object-fit: cover; }
+
+.card-content {
+  padding: 1rem; }
+
+.card-header {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem; }
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem; }
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    padding: 3rem; }
+  .grid {
+    grid-gap: 3rem; } }
 
 /* Mixins */
 .titulo {
@@ -108,6 +144,7 @@ footer a {
   font-family: "Potta One"; }
 
 .subtitulo {
+  margin: 30px;
   text-align: center;
   color: #f1266a; }
 
@@ -123,14 +160,26 @@ footer a {
 
 /* Mixins */
 .botonEnviar {
+  text-align: center;
   background-color: #830a32;
   color: pink; }
 
 .botonLimpiar {
+  text-align: center;
   background-color: #f15c8e;
   color: pink;
   margin: 10px; }
 
 .botonVer {
+  text-align: center;
   background-color: #f15c8e;
-  color: pink; }
+  color: pink;
+  font-size: 1.4rem; }
+
+.botonIndex {
+  display: grid;
+  margin: 32px;
+  text-align: center;
+  background-color: #f15c8e;
+  color: pink;
+  font-size: 1.4rem; }

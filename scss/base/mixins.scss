@@ -5,10 +5,18 @@
 }
 
 
-
 /* Mixins */
+
+@mixin botonIndex($bgColor, $textColor) {
+    display: grid;
+    margin: 32px;
+    text-align: center;
+    background-color: $bgColor;
+    color: $textColor;
+}
+
 @mixin boton ($bgColor, $textColor) {
-    
+    text-align: center;
     background-color: $bgColor;
     color: $textColor;
 }
@@ -17,30 +25,32 @@
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $align; 
+    align-items: $align;
     flex-wrap: $wrap;
 }
 
-@mixin titulo($align, $decoration, $color, $size, $family){
+@mixin titulo($align, $decoration, $color, $size, $family) {
     text-align: $align;
-    text-decoration:$decoration;
+    text-decoration: $decoration;
     color: $color;
     font-size: $size;
     font-family: $family;
 }
 
-@mixin subtitulo($align, $color){
+@mixin subtitulo($align, $color,$margin) {
+    margin: $margin;
     text-align: $align;
     color: $color;
 }
 
-@mixin parrafo($align, $color, $size){
+@mixin parrafo($align, $color, $size) {
     text-align: $align;
     color: $color;
     font-size: $size;
 }
 
-@mixin contacto($align, $color, $size){
+@mixin contacto($align, $color, $size) {
     text-align: $align;
     color: $color;
-    font-size: $size;}
+    font-size: $size;
+}
