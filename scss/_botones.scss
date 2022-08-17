@@ -5,17 +5,17 @@
 }
 
 .botonLimpiar {
-    @include boton( #f15c8e, pink);
+    @include boton(#f15c8e, pink);
     margin: 10px;
 }
 
-.botonVer{
+.botonVer {
     @include boton(#f15c8e, pink);
     font-size: 1.4rem;
-    
+
 }
 
-.botonIndex{
+.botonIndex {
     @include botonIndex(#f15c8e, pink);
     font-size: 1.4rem;
 }

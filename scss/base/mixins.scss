@@ -37,7 +37,7 @@
     font-family: $family;
 }
 
-@mixin subtitulo($align, $color,$margin) {
+@mixin subtitulo($align, $color, $margin) {
     margin: $margin;
     text-align: $align;
     color: $color;

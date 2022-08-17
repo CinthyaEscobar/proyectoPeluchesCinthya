@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-a{
-    color:rgb(95, 16, 141) !important;
+a {
+    color: rgb(95, 16, 141) !important;
 }
 
 body {
@@ -32,9 +32,10 @@ article p {
 
 
 footer {
-   margin-top: auto;
+    margin-top: auto;
+
     li {
-        
+
         font-size: 1.4rem;
         display: block;
         padding: .5rem 1rem;
@@ -64,11 +65,11 @@ footer {
         color: #811212;
         text-decoration: none;
         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-       
+
         &:hover {
             background-color: rgb(172, 72, 105);
         }
-       
+
     }
 }
 
@@ -81,7 +82,8 @@ footer {
     justify-content: space-around;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
-    &:hover{
+
+    &:hover {
         filter: opacity(0.9);
         transform: scale(1.04);
     }
@@ -132,4 +134,3 @@ footer {
         width: 100%;
     }
 }
-

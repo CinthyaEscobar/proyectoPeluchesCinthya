@@ -3,13 +3,15 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 1.5rem;
-    &-item{
+
+    &-item {
         background-color: #fff;
         border-radius: 0.4rem;
         overflow: hidden;
         box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
         cursor: pointer;
         transition: 0.2s;
+
         &:hover {
             box-shadow: 5px 5px 20px rgba(132, 55, 134, 0.733);
             transform: translateY(-3%);
@@ -44,4 +46,3 @@
     color: #3d3d3d;
     margin-bottom: 2.5rem;
 }
-
