@@ -64,6 +64,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   /* para celular */
+  .body,
   .main,
   .main p,
   .right,
@@ -128,12 +129,6 @@ footer {
   line-height: 1.7;
   color: #3d3d3d;
   margin-bottom: 2.5rem; }
-
-@media only screen and (max-width: 480px) {
-  .cards {
-    padding: 3rem; }
-  .grid {
-    grid-gap: 3rem; } }
 
 /* Mixins */
 .titulo {
