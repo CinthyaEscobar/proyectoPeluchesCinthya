@@ -10,7 +10,7 @@
 }
 
 .parrafo {
-    @include parrafo (justify, rgb(241, 94, 143), 25px);
+    @include parrafo (center, rgb(241, 94, 143), 25px);
 }
 
 .contacto {

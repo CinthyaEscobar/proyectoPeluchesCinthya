@@ -5,6 +5,9 @@
 a {
   color: #5f108d !important; }
 
+p {
+  font-size: 30px; }
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: linear-gradient(to right, rgba(94, 231, 223, 0.5), rgba(180, 144, 202, 0.5));
@@ -37,7 +40,7 @@ footer {
     footer a:hover {
       color: #80003c; }
 
-.navbar__collapse {
+.navbar-collapse {
   flex-grow: initial; }
 
 .navbar__nav-link {

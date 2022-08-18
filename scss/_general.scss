@@ -7,6 +7,10 @@ a {
     color: rgb(95, 16, 141) !important;
 }
 
+p{
+    font-size: 30px;
+}
+
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: map-get($colores, "color-principal");
@@ -54,10 +58,9 @@ footer {
 }
 
 .navbar {
-    &__collapse {
+    &-collapse{
         flex-grow: initial;
     }
-
     &__nav-link {
         font-size: 1.4rem;
         display: block;
